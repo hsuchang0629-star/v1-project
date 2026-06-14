@@ -148,8 +148,8 @@
 
       <!-- Logo: absolute center on mobile, static left on desktop -->
       <div id="nav-logo" class="flex items-center gap-1 cursor-pointer absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
-        <span class="material-symbols-outlined text-primary text-xl sm:text-3xl">restaurant</span>
-        <span class="font-display text-[13px] sm:text-headline-md font-bold text-primary dark:text-primary-fixed-dim">CampusBistro</span>
+        <span class="material-symbols-outlined text-primary text-xl md:text-3xl">restaurant</span>
+        <span class="font-display text-[13px] md:text-headline-md font-bold text-primary dark:text-primary-fixed-dim">CampusBistro</span>
       </div>
       
       <!-- Desktop Navigation Tabs -->
@@ -159,89 +159,89 @@
         <button id="nav-route" class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-primary pb-1 transition-all">行程規劃</button>
       </nav>
 
-      <!-- Right Navbar Widgets (Clock only, compact display) -->
+      <!-- Right Navbar Widgets (Clock only, compact display on mobile, normal on desktop) -->
       <div class="flex items-center gap-1 shrink-0 z-10">
         <!-- 台北時間時鐘 (台北時間文字已在 js 中刪除，此處亦縮小內距) -->
-        <div class="flex items-center gap-xs px-2 py-0.5 bg-[#f0ede9] dark:bg-[#2d2d2d] rounded-full border border-[#d4c4b7] dark:border-outline text-[#50453b] dark:text-[#c8c7b7] font-bold shadow-sm">
-          <span class="material-symbols-outlined text-primary text-[12px] sm:text-[18px]">schedule</span>
-          <span id="nav-real-time" class="text-[9px] sm:text-xs tracking-tight whitespace-nowrap">載入中...</span>
+        <div class="flex items-center gap-xs px-2 py-0.5 md:px-md md:py-[6px] bg-[#f0ede9] dark:bg-[#2d2d2d] rounded-full border border-[#d4c4b7] dark:border-outline text-[#50453b] dark:text-[#c8c7b7] font-bold shadow-sm">
+          <span class="material-symbols-outlined text-primary text-[12px] md:text-[20px]">schedule</span>
+          <span id="nav-real-time" class="text-[9px] md:text-xs tracking-tight whitespace-nowrap">載入中...</span>
         </div>
       </div>
     </div>
   </header>
 
-  <main id="main-content" class="flex-grow max-w-[1280px] mx-auto w-full px-margin-mobile md:px-margin-desktop py-4 sm:py-lg transition-transform duration-300 ease-in-out">
+  <main id="main-content" class="flex-grow max-w-[1280px] mx-auto w-full px-margin-mobile md:px-margin-desktop py-4 md:py-lg transition-transform duration-300 ease-in-out">
     
     <!-- ========================================== -->
     <!-- TAB 1: 等待時間 (campusbistro_modal 主畫面) -->
     <!-- ========================================== -->
-    <div id="tab-dashboard-container" class="tab-content space-y-6 sm:space-y-xl">
-      <!-- Hero Banner Section (Compact height & layout, no image) -->
-      <section class="relative overflow-hidden rounded-24 h-[260px] sm:h-[380px] flex items-center bg-gradient-to-br from-amber-50/60 via-surface-container-low to-primary-fixed/20 dark:from-[#2c1a0c] dark:via-[#1e1e1e] dark:to-[#3d2c1c] border border-outline-variant/35 shadow-sm">
+    <div id="tab-dashboard-container" class="tab-content space-y-6 md:space-y-xl">
+      <!-- Hero Banner Section (Compact height on mobile, original large on desktop) -->
+      <section class="relative overflow-hidden rounded-24 h-[260px] md:h-[480px] flex items-center bg-gradient-to-br from-amber-50/60 via-surface-container-low to-primary-fixed/20 dark:from-[#2c1a0c] dark:via-[#1e1e1e] dark:to-[#3d2c1c] border border-outline-variant/35 shadow-sm">
         <div class="absolute inset-0 bg-[radial-gradient(#7c5730_1px,transparent_1px)] [background-size:20px_20px] opacity-5 dark:opacity-[0.03] pointer-events-none"></div>
         <div class="absolute inset-0 hero-gradient"></div>
-        <div class="relative z-10 px-4 sm:px-10 md:px-xl space-y-3 sm:space-y-md max-w-2xl w-full flex flex-col items-center md:items-start text-center md:text-left justify-center mx-auto md:mx-0">
-          <h1 class="font-display text-xl sm:text-3xl md:text-[44px] leading-tight text-on-surface">
+        <div class="relative z-10 px-4 md:px-xl space-y-3 md:space-y-md max-w-2xl w-full flex flex-col items-center md:items-start text-center md:text-left justify-center mx-auto md:mx-0">
+          <h1 class="font-display text-xl md:text-[56px] leading-tight text-on-surface">
             校園學餐<br/><span class="text-primary">智慧決策系統</span>
           </h1>
-          <p class="text-xs sm:text-sm md:text-base text-on-surface-variant leading-normal sm:leading-relaxed">
+          <p class="text-xs md:text-body-lg text-on-surface-variant leading-normal md:leading-relaxed">
             透過即時等待時間與個人偏好分析，幫助學生快速完成用餐決策。在繁忙的校園生活中，找回最舒適的用餐節奏。
           </p>
-          <div class="flex justify-center md:justify-start gap-3 pt-1 w-full sm:w-auto">
-            <button id="btn-hero-explore" class="bg-primary text-on-primary px-4 py-2 sm:px-6 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-md hover:opacity-95 transition-all active:scale-95">
+          <div class="flex justify-center md:justify-start gap-3 md:gap-md pt-1 md:pt-2 w-full sm:w-auto">
+            <button id="btn-hero-explore" class="bg-primary text-on-primary px-4 py-2 md:px-xl md:py-md md:rounded-24 text-xs md:text-headline-md rounded-full font-bold shadow-md hover:opacity-95 transition-all active:scale-95">
               開始探索
             </button>
-            <button id="btn-hero-route" class="border border-outline text-on-surface bg-white/70 dark:bg-black/30 px-4 py-2 sm:px-6 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold hover:bg-surface-container-high transition-all">
+            <button id="btn-hero-route" class="border border-outline text-on-surface bg-white/70 dark:bg-black/30 px-4 py-2 md:px-xl md:py-md md:rounded-24 text-xs md:text-headline-md rounded-full font-bold hover:bg-surface-container-high transition-all">
               查看路程
             </button>
           </div>
         </div>
       </section>
 
-      <!-- Best Recommendation Banner (Compact size) -->
+      <!-- Best Recommendation Banner (Compact size on mobile, original large on desktop) -->
       <section class="animate-pulse-slow">
-        <div class="bg-tertiary-container rounded-24 p-4 sm:p-lg flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-lg relative overflow-hidden group border border-outline-variant/30">
+        <div class="bg-tertiary-container rounded-24 p-4 md:p-xl flex flex-col md:flex-row items-center justify-between gap-4 md:gap-lg relative overflow-hidden group border border-outline-variant/30">
           <div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl"></div>
-          <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-lg flex-1 text-center sm:text-left w-full justify-center">
-            <div class="bg-surface-container-lowest p-2.5 sm:p-md rounded-24 shadow-sm group-hover:scale-105 transition-transform shrink-0 mx-auto sm:mx-0">
-              <span class="material-symbols-outlined text-[32px] sm:text-[48px] text-primary" style='font-variation-settings: "FILL" 1;'>restaurant</span>
+          <div class="flex flex-col sm:flex-row items-center gap-4 md:gap-lg flex-1 text-center sm:text-left w-full justify-center">
+            <div class="bg-surface-container-lowest p-2.5 md:p-md rounded-24 shadow-sm group-hover:scale-105 transition-transform shrink-0 mx-auto sm:mx-0">
+              <span class="material-symbols-outlined text-[32px] md:text-[48px] text-primary" style='font-variation-settings: "FILL" 1;'>restaurant</span>
             </div>
             <div class="flex flex-col items-center sm:items-start">
               <div class="flex items-center gap-sm mb-1">
                 <span class="bg-primary text-on-primary text-[9px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider">推薦</span>
                 <span class="text-on-tertiary-container text-xs opacity-80">⭐ 今日最優首選</span>
               </div>
-              <h2 id="banner-recommend-name" class="text-base sm:text-headline-md md:text-headline-lg font-bold text-on-tertiary-container">天津蔥抓餅</h2>
+              <h2 id="banner-recommend-name" class="text-base md:text-headline-lg font-bold text-on-tertiary-container">天津蔥抓餅</h2>
             </div>
           </div>
-          <div class="flex items-center justify-center gap-4 bg-surface-container-lowest/20 backdrop-blur-md border border-white/20 rounded-24 px-4 py-2 sm:px-6 sm:py-3 shrink-0 w-full sm:w-auto">
+          <div class="flex items-center justify-center gap-4 bg-surface-container-lowest/20 backdrop-blur-md border border-white/20 rounded-24 px-4 py-2 md:px-xl md:py-md shrink-0 w-full sm:w-auto">
             <div class="text-center">
-              <p class="text-on-tertiary-container text-[9px] sm:text-label-sm uppercase tracking-widest opacity-80 mb-0.5">等待時間</p>
-              <p id="banner-recommend-time" class="text-base sm:text-headline-lg font-bold text-on-tertiary-container">5 分鐘</p>
+              <p class="text-on-tertiary-container text-[9px] md:text-label-sm uppercase tracking-widest opacity-80 mb-0.5">等待時間</p>
+              <p id="banner-recommend-time" class="text-base md:text-headline-lg font-bold text-on-tertiary-container">5 分鐘</p>
             </div>
-            <button id="btn-banner-go" class="bg-surface-bright text-primary px-4 py-1.5 rounded-full text-xs font-bold hover:bg-white transition-colors active:scale-95">立即查看</button>
+            <button id="btn-banner-go" class="bg-surface-bright text-primary px-4 py-1.5 md:px-lg md:py-3 rounded-full text-xs md:text-label-md font-bold hover:bg-white transition-colors active:scale-95">立即查看</button>
           </div>
         </div>
       </section>
 
-      <!-- Real-time Dynamics Section (Compact) -->
+      <!-- Real-time Dynamics Section (Compact on mobile, original on desktop) -->
       <section class="space-y-3">
         <div class="flex flex-col items-center text-center sm:flex-row sm:items-end sm:justify-between px-xs gap-3 w-full">
           <div>
-            <h3 class="text-base sm:text-headline-lg font-bold text-on-surface">餐廳即時動態</h3>
-            <p class="text-on-surface-variant text-xs sm:text-body-md mt-0.5">即時更新全校學餐人潮與等待時間</p>
+            <h3 class="text-base md:text-headline-lg font-bold text-on-surface">餐廳即時動態</h3>
+            <p class="text-on-surface-variant text-xs md:text-body-md mt-0.5">即時更新全校學餐人潮與等待時間</p>
           </div>
           <div class="flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
             <div class="flex items-center gap-xs text-on-surface-variant">
-              <span class="material-symbols-outlined text-[18px]">sort</span>
-              <select id="select-dashboard-sort" class="bg-transparent border-none focus:ring-0 text-xs sm:text-label-md cursor-pointer font-bold py-1 pl-1 pr-6">
+              <span class="material-symbols-outlined text-[16px]">sort</span>
+              <select id="select-dashboard-sort" class="bg-transparent border-none focus:ring-0 text-xs md:text-label-md cursor-pointer font-bold py-1 pl-1 pr-6">
                 <option value="default">預設排序</option>
                 <option value="wait-asc">依時間由短到長</option>
                 <option value="wait-desc">依時間由長到短</option>
               </select>
             </div>
-            <button id="btn-dashboard-refresh" class="flex items-center gap-xs bg-surface-container-high px-3 py-1.5 rounded-full text-xs text-on-surface hover:bg-outline-variant transition-colors active:scale-95 font-bold">
-              <span class="material-symbols-outlined text-[18px]">refresh</span>
+            <button id="btn-dashboard-refresh" class="flex items-center gap-xs bg-surface-container-high px-3 py-1.5 md:px-lg md:py-2 rounded-full text-xs md:text-label-md text-on-surface hover:bg-outline-variant transition-colors active:scale-95 font-bold">
+              <span class="material-symbols-outlined text-[16px]">refresh</span>
               重新整理
             </button>
           </div>
@@ -253,33 +253,33 @@
         </div>
       </section>
 
-      <!-- Quick Stats Banner (Compact padding & spacing) -->
+      <!-- Quick Stats Banner (Compact padding on mobile, original large on desktop) -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-md">
-        <div class="bg-surface-container p-4 sm:p-lg rounded-24 flex flex-col items-center text-center md:flex-row md:text-left gap-sm md:gap-md border border-outline-variant/10 shadow-sm">
+        <div class="bg-surface-container p-4 md:p-lg rounded-24 flex flex-col items-center text-center md:flex-row md:text-left gap-sm md:gap-md border border-outline-variant/10 shadow-sm">
           <div class="bg-white dark:bg-[#2d2d2d] p-2.5 rounded-xl mx-auto md:mx-0">
             <span class="material-symbols-outlined text-primary">groups</span>
           </div>
           <div>
-            <p class="text-on-surface-variant text-[10px] sm:text-label-sm uppercase font-bold">目前校內用餐人數</p>
-            <p class="text-base sm:text-headline-md font-bold">1,284 <span class="text-xs font-normal opacity-60">人</span></p>
+            <p class="text-on-surface-variant text-[10px] md:text-label-sm uppercase font-bold">目前校內用餐人數</p>
+            <p class="text-base md:text-headline-md font-bold">1,284 <span class="text-xs md:text-body-md font-normal opacity-60">人</span></p>
           </div>
         </div>
-        <div class="bg-surface-container p-4 sm:p-lg rounded-24 flex flex-col items-center text-center md:flex-row md:text-left gap-sm md:gap-md border border-outline-variant/10 shadow-sm">
+        <div class="bg-surface-container p-4 md:p-lg rounded-24 flex flex-col items-center text-center md:flex-row md:text-left gap-sm md:gap-md border border-outline-variant/10 shadow-sm">
           <div class="bg-white dark:bg-[#2d2d2d] p-2.5 rounded-xl mx-auto md:mx-0">
             <span class="material-symbols-outlined text-primary">timer</span>
           </div>
           <div>
-            <p class="text-on-surface-variant text-[10px] sm:text-label-sm uppercase font-bold">平均等待時間</p>
-            <p id="stats-avg-wait" class="text-base sm:text-headline-md font-bold">13 <span class="text-xs font-normal opacity-60">分鐘</span></p>
+            <p class="text-on-surface-variant text-[10px] md:text-label-sm uppercase font-bold">平均等待時間</p>
+            <p id="stats-avg-wait" class="text-base md:text-headline-md font-bold">13 <span class="text-xs md:text-body-md font-normal opacity-60">分鐘</span></p>
           </div>
         </div>
-        <div class="bg-surface-container p-4 sm:p-lg rounded-24 flex flex-col items-center text-center md:flex-row md:text-left gap-sm md:gap-md border border-outline-variant/10 shadow-sm">
+        <div class="bg-surface-container p-4 md:p-lg rounded-24 flex flex-col items-center text-center md:flex-row md:text-left gap-sm md:gap-md border border-outline-variant/10 shadow-sm">
           <div class="bg-white dark:bg-[#2d2d2d] p-2.5 rounded-xl mx-auto md:mx-0">
             <span class="material-symbols-outlined text-primary">analytics</span>
           </div>
           <div>
-            <p class="text-on-surface-variant text-[10px] sm:text-label-sm uppercase font-bold">系統建議達成率</p>
-            <p class="text-base sm:text-headline-md font-bold">92 <span class="text-xs font-normal opacity-60">%</span></p>
+            <p class="text-on-surface-variant text-[10px] md:text-label-sm uppercase font-bold">系統建議達成率</p>
+            <p class="text-base md:text-headline-md font-bold">92 <span class="text-xs md:text-body-md font-normal opacity-60">%</span></p>
           </div>
         </div>
       </section>

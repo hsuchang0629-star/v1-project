@@ -424,25 +424,25 @@ document.addEventListener("DOMContentLoaded", () => {
       const storeConfig = storeDetailsConfig[r.name] || {};
 
       const card = document.createElement("div");
-      card.className = "bg-surface-container-lowest rounded-24 p-4 sm:p-5 soft-shadow border border-outline-variant/30 group hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col justify-between h-[210px] sm:h-[230px] text-center sm:text-left items-center sm:items-stretch";
+      card.className = "bg-surface-container-lowest rounded-24 p-4 md:p-lg soft-shadow border border-outline-variant/30 group hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col justify-between h-[210px] md:h-72 text-center md:text-left items-center md:items-stretch";
       card.innerHTML = `
-        <div class="w-full flex flex-col items-center sm:items-stretch">
-          <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-xs sm:gap-0 mb-3 w-full">
-            <div class="w-10 h-10 rounded-xl bg-surface-container-high dark:bg-[#3d3d3d] flex items-center justify-center text-primary shrink-0">
-              <span class="material-symbols-outlined text-[22px]">${icon}</span>
+        <div class="w-full flex flex-col items-center md:items-stretch">
+          <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-xs md:gap-0 mb-3 md:mb-4 w-full">
+            <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-surface-container-high dark:bg-[#3d3d3d] flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[22px] md:text-[28px]">${icon}</span>
             </div>
-            <span class="px-2 py-0.5 rounded-full text-[10px] flex items-center gap-1 ${badgeColor} border font-bold">
-              <span class="w-1.5 h-1.5 rounded-full ${dotColor} pulse-dot"></span> ${label}
+            <span class="px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[10px] md:text-label-sm flex items-center gap-1 ${badgeColor} border font-bold">
+              <span class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full ${dotColor} pulse-dot"></span> ${label}
             </span>
           </div>
           <div class="space-y-xs w-full">
-            <p class="text-on-surface-variant dark:text-outline text-[10px] uppercase font-bold">${r.type}</p>
-            <h4 class="text-sm sm:text-base md:text-lg text-on-surface dark:text-[#fcf9f5] font-bold group-hover:text-primary transition-colors">${r.name}</h4>
+            <p class="text-on-surface-variant dark:text-outline text-[10px] md:text-label-sm uppercase font-bold">${r.type}</p>
+            <h4 class="text-sm md:text-headline-md text-on-surface dark:text-[#fcf9f5] font-bold group-hover:text-primary transition-colors">${r.name}</h4>
           </div>
         </div>
-        <div class="pt-3 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center sm:justify-between gap-xs sm:gap-0 w-full">
-          <span class="text-on-surface-variant dark:text-outline text-xs sm:text-sm font-bold">等待時間</span>
-          <span class="text-lg sm:text-xl font-extrabold ${waitColor}">${r.waitTime} 分鐘</span>
+        <div class="pt-3 md:pt-4 border-t border-outline-variant/30 flex flex-col md:flex-row items-center md:justify-between gap-xs md:gap-0 w-full">
+          <span class="text-on-surface-variant dark:text-outline text-xs md:text-body-md font-bold">等待時間</span>
+          <span class="text-lg md:text-headline-md font-extrabold ${waitColor}">${r.waitTime} 分鐘</span>
         </div>
       `;
       // Click to open modal
