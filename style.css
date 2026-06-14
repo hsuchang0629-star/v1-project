@@ -1,0 +1,92 @@
+/* Custom Styles to augment Tailwind Layout */
+
+/* Material Icons configuration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Card Radius and Pill Radius */
+.card-radius {
+  border-radius: 24px;
+}
+
+.pill-radius {
+  border-radius: 24px;
+}
+
+/* Card Elevation & Humanist Organic Shadow */
+.card-elevation {
+  box-shadow: 0 10px 30px rgba(121, 84, 46, 0.04);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-elevation:hover {
+  box-shadow: 0 15px 35px rgba(121, 84, 46, 0.08);
+  transform: translateY(-2px);
+}
+
+.custom-shadow {
+  box-shadow: 0px 10px 30px rgba(121, 84, 46, 0.05);
+}
+
+.soft-shadow {
+  box-shadow: 0px 20px 40px rgba(121, 84, 46, 0.08);
+}
+
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(252, 249, 245, 0) 0%, #fcf9f5 100%);
+}
+
+/* Animations */
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.pulse-dot {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scrollbars styling */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f3ef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4c4b7;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #82756a;
+}

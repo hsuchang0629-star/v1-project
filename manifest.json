@@ -1,0 +1,18 @@
+{
+  "name": "CampusBistro - 校園學餐智慧決策系統",
+  "short_name": "CampusBistro",
+  "description": "提供校園學餐即時等待預估、排序看板與最短步行路徑規劃",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fcf9f5",
+  "theme_color": "#79542e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%2379542e'><circle cx='256' cy='256' r='256'/><text x='50%' y='65%' font-family='sans-serif' font-size='180' font-weight='bold' fill='white' text-anchor='middle'>學餐</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
